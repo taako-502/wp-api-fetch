@@ -1,0 +1,33 @@
+{
+  "scripts": {
+    "start": "wp-scripts start",
+    "build": "wp-scripts build",
+    "test:php": "yarn wp-env run tests-cli bash -c 'phpunit /var/www/html/wp-content/plugins/wp-api-fetch/tests'",
+    "check-engines": "wp-scripts check-engines",
+    "check-licenses": "wp-scripts check-licenses",
+    "format": "wp-scripts format",
+    "lint:css": "wp-scripts lint-style",
+    "lint:js": "wp-scripts lint-js",
+    "lint:md:docs": "wp-scripts lint-md-docs",
+    "lint:pkg-json": "wp-scripts lint-pkg-json",
+    "packages-update": "wp-scripts packages-update",
+    "wp-env": "wp-env"
+  },
+  "dependencies": {
+    "@wordpress/api-fetch": "^6.40.0",
+    "@wordpress/components": "^25.7.0",
+    "@wordpress/env": "^8.7.0",
+    "@wordpress/scripts": "^26.12.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-notifications-component": "^4.0.1",
+    "typescript": "3.3.1 - 5.2.0"
+  },
+  "volta": {
+    "yarn": "1.22.17",
+    "node": "18.18.1"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1"
+  }
+}
